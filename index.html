@@ -10,7 +10,7 @@
   var EJ_SVC = 'service_70wzlgn';
   var EJ_TPL = 'template_5rbg2zh';
 </script>
-<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" onload="emailjs.init({publicKey: EJ_KEY})"></script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" onload="emailjs.init({publicKey: 'zcg06P7wHU5WZDcVI'})"></script>
 <style>
 :root {
   --pink:#E8A0B4;--pink-dark:#C9728D;--pink-deep:#a55070;
@@ -390,7 +390,7 @@ async function submitOrder(){
   submitBtn.textContent='Sending...';submitBtn.disabled=true;
   statusEl.textContent='';statusEl.className='send-status';
   try {
-    await emailjs.send(EJ_SVC,EJ_TPL,params);
+    await emailjs.send('service_70wzlgn','template_5rbg2zh',params);
     document.getElementById('c-ordernum').textContent=orderNum;
     document.getElementById('c-date').textContent=dateFmt;
     document.getElementById('c-name').textContent=fname+' '+lname;
