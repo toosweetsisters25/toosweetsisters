@@ -10,7 +10,7 @@
   var EJ_SVC = 'service_70wzlgn';
   var EJ_TPL = 'template_5rbg2zh';
 </script>
-<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" onload="emailjs.init({publicKey: 'zcg06P7wHU5WZDcVI'})"></script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 <style>
 :root {
   --pink:#E8A0B4;--pink-dark:#C9728D;--pink-deep:#a55070;
@@ -426,6 +426,10 @@ function newOrder(){
 }
 
 renderNav();renderMenu();updateCart();
+</script>
+<script>
+// Initialize EmailJS after everything is loaded
+emailjs.init({ publicKey: 'zcg06P7wHU5WZDcVI' });
 </script>
 </body>
 </html>
